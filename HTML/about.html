@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Head-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Hole in One</title>
+  <link rel="stylesheet" href="../CSS/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<!--Body-->
+<body>
+
+<!--Accessibility Tool-->
+  <header>
+    <div class="accessibility-toolbar">
+  <button onclick="increaseFont()">A+</button>
+  <button onclick="decreaseFont()">A-</button>
+  <button onclick="resetAccessibility()">Reset</button>
+</div>
+
+<!--Logo and Company Name-->
+  <header>
+    <nav>
+      <div class="logo">
+  <img src="../images/0.0.png" alt="Hole in One Logo" class="logo-img">
+  <span class="logo-text">Hole in One</span>
+</div>
+
+<!--Navigation-->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+<!--Banner and Description-->
+    </nav>
+    <div class="hero small-hero">
+        <img src="../images/4.0.png" alt="Resort Banner" class="hero-banner">
+      <h1>About Us</h1>
+      <p>Our story, our mission, and our passion for golf hospitality.</p>
+    </div>
+  </header>
+
+<!--Features and Description-->
+  <section class="features">
+    <div class="feature">
+      <h2>Our Story</h2>
+      <p>Located on Portugal's stunning coastline, Hole in One began as a dream to create a world-class golf destination. Today, we offer a luxurious escape for golf enthusiasts and leisure travelers alike.</p>
+    </div>
+    <div class="feature">
+      <h2>Our Mission</h2>
+      <p>To provide an unforgettable golfing experience through exceptional service, top-tier facilities, and personalized packages tailored to every guest’s needs.</p>
+    </div>
+    <div class="feature">
+      <h2>Why Choose Us?</h2>
+      <p>Whether it's a weekend break or a corporate retreat, we combine elegance, sport, and relaxation in one extraordinary resort.</p>
+    </div>
+  </section>
+
+<!--Footer-->
+  <footer>
+    <p>&copy; 2025 Hole in One Resort. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+<!--Jave Script for Accesssibility Tool-->
+<script>
+  let fontSize = 100;
+
+  function increaseFont() {
+    fontSize += 10;
+    document.body.style.fontSize = fontSize + '%';
+  }
+
+  function decreaseFont() {
+    if (fontSize > 70) {
+      fontSize -= 10;
+      document.body.style.fontSize = fontSize + '%';
+    }
+  }
+
+  function resetAccessibility() {
+    fontSize = 100;
+    document.body.style.fontSize = '100%';
+  }
+</script>
+</html>

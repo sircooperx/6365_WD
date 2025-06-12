@@ -1,0 +1,389 @@
+/*Fonts*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+/**/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f4c2f; /* Olive green */
+  padding: 1rem 2rem;
+  color: white;
+}
+
+/*Logo*/
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logo-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+}
+
+/*Navigation*/
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #D6D1B1; 
+}
+
+/*Hero Section*/
+.hero {
+  background: url('https://images.unsplash.com/photo-1562764308-00ed6f40e78f') no-repeat center center/cover;
+  color: rgb(0, 0, 0);
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-banner {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.cta-button {
+  
+  background-color: #2f4c2f;
+  color: #F7F6F0;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #B5AF8A;
+}
+
+/*Features Section*/
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #F7F6F0;
+}
+
+.feature {
+  background: white;
+  padding: 2rem;
+  border-left: 4px solid #3B5D3B;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+  margin-top: 0;
+}
+
+/*Footer*/
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #3B5D3B;
+  color: white;
+}
+
+/*Gallery Slider*/
+.gallery {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-family: 'Playfair Display', serif;
+  color: #3b5d3b;
+  margin-bottom: 1rem;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(59, 93, 59, 0.8);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 1;
+  border-radius: 6px;
+}
+
+.slide-btn:hover {
+  background: #2f4c2f;
+}
+
+/*Features Section with Images*/
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #F7F6F0;
+}
+
+.feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  background: white;
+  padding: 2rem;
+  border-left: 4px solid #3B5D3B;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.feature img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.feature-text {
+  flex: 1;
+}
+
+.feature-text h2 {
+  font-family: 'Playfair Display', serif;
+  margin-top: 0;
+  color: #3B5D3B;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #3B5D3B;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+
+.feature-text p {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+/*Responsive layout for small screens*/
+@media (max-width: 768px) {
+  .feature {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*Accessibility Tool*/
+.accessibility-toolbar {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f3f3f3;
+  border-bottom: 2px solid #ccc;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.accessibility-toolbar button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #3B5D3B;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.accessibility-toolbar button:hover {
+  background-color: #2f4c2f;
+}
+
+/*Enquiry Form*/
+.contact-section {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #f7f6f0;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.contact-section h2 {
+  font-family: 'Playfair Display', serif;
+  color: #3B5D3B;
+  margin-bottom: 1rem;
+}
+
+.contact-section p {
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-form button {
+  background-color: #3B5D3B;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #2f4c2f;
+}
+
+/*Company Contact Details*/
+.contact-details {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.contact-details h3 {
+  font-family: 'Playfair Display', serif;
+  color: #3B5D3B;
+  margin-bottom: 1rem;
+}
+
+.contact-details p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-details a {
+  color: #3B5D3B;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}

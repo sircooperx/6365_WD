@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Head-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Packages | Hole in One</title>
+  <link rel="stylesheet" href="../CSS/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<!--Body-->
+<body>
+
+<!--Accessibility Tool-->
+  <header>
+    <div class="accessibility-toolbar">
+  <button onclick="increaseFont()">A+</button>
+  <button onclick="decreaseFont()">A-</button>
+  <button onclick="resetAccessibility()">Reset</button>
+</div>
+
+<!--Logo Image and Company Name-->
+    <nav>
+      <div class="logo">
+  <img src="../images/0.0.png" alt="Hole in One Logo" class="logo-img">
+  <span class="logo-text">Hole in One</span>
+</div>
+
+<!--Navigation-->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+<!--Banner and Description-->
+    <div class="hero small-hero">
+        <img src="../images/3.0.png" alt="Resort Banner" class="hero-banner">
+      <h1>Our Packages</h1>
+      <p>Choose the golf experience that suits you best.</p>
+    </div>
+  </header>
+
+<!--Features and Description with Images-->
+<section class="features">
+  <div class="feature">
+    <img src="../images/3.2.png" alt="Five Rounds">
+    <h2>Five Rounds</h2>
+    <p class="price">€950 / 5 nights</p>
+    <p>5-night stay in a luxury suite, 5 rounds of 18-hole golf including Sea View Course, plus digital coaching.</p>
+  </div>
+
+  <div class="feature">
+    <img src="../images/3.1.png" alt="Triple Tee">
+    <h2>Triple Tee</h2>
+    <p class="price">€520 / 2 nights</p>
+    <p>2-night stay with breakfast, 3 rounds of 18-hole golf including Sea View (if available), buggy hire, and 20% Pro Shop discount.</p>
+  </div>
+
+  <div class="feature">
+    <img src="../images/3.3.png" alt="Getaway Break">
+    <h2>Getaway Break</h2>
+    <p class="price">€280 / night</p>
+    <p>Overnight stay with breakfast, dinner at resort restaurant, access to courses (excl. Sea View), and free club hire.</p>
+  </div>
+
+  <div class="feature">
+    <h2>Custom Packages</h2>
+    <p>Planning a corporate event or extended stay? <a href="contact.html">Contact us</a> to create a tailored golf experience for your group.</p>
+  </div>
+</section>
+
+  <!--Footer-->
+  <footer>
+    <p>&copy; 2025 Hole in One Resort. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+<!--Jave Script for Accesssibility Tool-->
+<script>
+  let fontSize = 100;
+
+  function increaseFont() {
+    fontSize += 10;
+    document.body.style.fontSize = fontSize + '%';
+  }
+
+  function decreaseFont() {
+    if (fontSize > 70) {
+      fontSize -= 10;
+      document.body.style.fontSize = fontSize + '%';
+    }
+  }
+
+  function resetAccessibility() {
+    fontSize = 100;
+    document.body.style.fontSize = '100%';
+  }
+</script>
+</html>
