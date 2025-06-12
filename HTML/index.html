@@ -3,10 +3,10 @@
 
 <!--Head-->
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hole in One Resort</title>
-  <link rel="stylesheet" href="../CSS/style.css"/>
+  <link rel="stylesheet" href="../CSS/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
@@ -92,10 +92,30 @@
   <footer>
     <p>&copy; 2025 Hole in One Resort. All Rights Reserved.</p>
   </footer>
-</body>
 
-<!--Java Script for Gallery Slider-->
+<!--Accessibility for Increasing and Decreasing Font-->
+<script>
+  let fontSize = 100;
 
+  function increaseFont() {
+    fontSize += 10;
+    document.body.style.fontSize = fontSize + '%';
+  }
+
+  function decreaseFont() {
+    if (fontSize > 70) {
+      fontSize -= 10;
+      document.body.style.fontSize = fontSize + '%';
+    }
+  }
+
+  function resetAccessibility() {
+    fontSize = 100;
+    document.body.style.fontSize = '100%';
+  }
+</script>
+
+  <!--Java Script for Gallery Slider-->
 <script>
 
   const slidesContainer = document.querySelector('.slides');
@@ -120,25 +140,6 @@
   });
 </script>
 
-<!--Java Script for Accesssibility Tool-->
-<script>
-  let fontSize = 100;
+</body>
 
-  function increaseFont() {
-    fontSize += 10;
-    document.body.style.fontSize = fontSize + '%';
-  }
-
-  function decreaseFont() {
-    if (fontSize > 70) {
-      fontSize -= 10;
-      document.body.style.fontSize = fontSize + '%';
-    }
-  }
-
-  function resetAccessibility() {
-    fontSize = 100;
-    document.body.style.fontSize = '100%';
-  }
-</script>
 </html>
